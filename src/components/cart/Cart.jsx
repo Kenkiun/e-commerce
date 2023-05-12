@@ -36,6 +36,8 @@ const Cart = () => {
           cartProducts.map(product => <CartProduct key={product.id} product={product}/>)
         }
       </section>
+
+
       <section className='grid grid-cols-2 py-10 border-t-[1px] border-gray-400'>
         <span>Total</span>
         <h4 className='text-end'>{totalPrice}</h4>

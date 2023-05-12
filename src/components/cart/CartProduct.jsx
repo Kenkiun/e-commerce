@@ -19,6 +19,9 @@ const CartProduct = ({product}) => {
         </div>
         <h4>{product.product.title}</h4>
         <i onClick={handleClickDelete} className='bx bx-trash text-red-500 cursor-pointer'></i>
+        <div>
+          <span className='border-[1px] p-[1px] px-3 border-1 py-[3px]'>{product.quantity}</span>
+        </div>
       </section>
       <h4 className='mt-2 text-end'>Total: <span className='font-semibold'>{product.quantity * product.product.price}</span></h4>
     </article>
